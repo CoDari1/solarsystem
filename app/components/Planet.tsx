@@ -25,6 +25,7 @@ export default function Planet({
     useFrame(() => {
         if (meshRef.current) {
             meshRef.current.rotation.y += rotationSpeed
+            meshRef.current.position.z = 0
         }
     })
 
